@@ -1,0 +1,13 @@
+### Debugging Process
+
+**Issue Identified:**
+- The `Counter` component was not incrementing the count as expected.
+
+**Diagnosis:**
+- Inspected the `Counter` component in React Developer Tools.
+- Found that the `setCount` function was not updating the state correctly.
+
+**Solution:**
+- Updated the `onClick` handler to correctly modify the state using a callback:
+  ```javascript
+  <button onClick={() => setCount(prevCount => prevCount + 1)}>Increment</button>
